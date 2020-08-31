@@ -1,0 +1,71 @@
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- greet
+- goodbye
+- affirm
+- deny
+- mood_great
+- mood_unhappy
+- bot_challenge
+- how_RU
+- make_complaint
+- ask_aim
+- thanks
+- say_diff
+- login
+- signup
+- see_complaints
+- see_banks
+responses:
+  utter_greet:
+  - text: Merhaba! Sana nasıl yardımcı olabilirim?
+  - text: Selam! Sana nasıl yardımcı olabilirim?
+  utter_did_that_help:
+  - text: Bu sana yardımcı oldu mu?
+  - text: Yardımcı oldu mu?
+  utter_happy:
+  - text: Güzel!
+  utter_goodbye:
+  - text: Bye
+  - text: Görüşürüz :)
+  utter_iamabot:
+  - text: Ben bir Chatbot'um.
+  utter_how_RU:
+  - text: Teşekkür ederim iyiyim :) Sana nasıl yardımcı olabilirim?
+  - text: Teşekkürler iyiyim :) Sana nasıl yardımcı olabilirim?
+  utter_make_complaint:
+  - text: http://localhost:4200/#/yeni-sikayet adresini kullanarak şikayetini paylaşabilirsin.
+  utter_ask_aim:
+  - text: Banka müşterilerinin şikayetlerini daha kısa sürede çözmek için çalışıyoruz.
+  utter_thanks:
+  - text: Rica ederim. Herhangi bir sorun için ben buradayım.
+  utter_say_diff:
+  - text: Hala geliştiriliyorum...
+  - text: Hala geliştiriliyorum, bu nedenle sıklıkla aynı yanıtlar verebilirim.
+  utter_login:
+  - text: http://localhost:4200/#/uye-girisi adresini kullanarak giriş yapabilirsiniz.
+  utter_signup:
+  - text: http://localhost:4200/#/uye-ol adresini kullanarak üye olabilirsiniz.
+  utter_see_complaints:
+  - text: http://localhost:4200/#/sikayetler adresini kullanarak tüm şikayetleri görebilirsiniz.
+  utter_see_banks:
+  - text: http://localhost:4200/#/bankalar adresini kullanarak sistemdeki tüm bankaları
+      ve istatistiklerini görebilirsiniz.
+actions:
+- utter_greet
+- utter_cheer_up
+- utter_did_that_help
+- utter_happy
+- utter_goodbye
+- utter_iamabot
+- utter_how_RU
+- utter_make_complaint
+- utter_ask_aim
+- utter_thanks
+- utter_say_diff
+- utter_login
+- utter_signup
+- utter_see_complaints
+- utter_see_banks
